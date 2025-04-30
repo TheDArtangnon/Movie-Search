@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9ada813903.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav>
+        <div class="nav__container">
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#">HOME</a></li>
+            <li><a class="nav__link" href="#">FIND YOUR MOVIE</a></li>
+            <button class="nav__link--btn">CONTACT</button>
+           
+          </ul>
+      </div>
+      
+
+    <div class="title__search"> 
+        <div class="title__search--container">
+          <input type="text" placeholder="Search By Movie Title" onchange="searchChange(event)">
+        </div>
+      </div>
+</nav>
+    
+
+    <div class="container">
+        <div class="row">
+    <select id="filter" onchange="filterMovies()">
+        <option value="" disabled selected>Sort</option>
+        <option value="LOW_TO_HIGH">Date</option>
+        <option value="HIGH_TO_LOW">Price, High to Low</option>
+        <option value="RATING">Rating</option>
+      </select>
+    
+      <div class="movies__loading">
+      <i class="fas fa-spinner movies__loading--spinner"></i>
+     </div>
+
+    <section class="search">
+<div class="movies">
+
+</div>
+    </section>
+    
+          </div>      
+           </div>      
+   
+
+</body>
+</html>

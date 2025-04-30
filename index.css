@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Protest+Riot&family=Roboto:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: rgb(94, 19, 19);
+  }
+
+  nav {
+    background-image:url(Assets/Background\ 2.jpeg);
+    background-size:1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nav__links {
+    display: flex;
+    justify-content:right ;
+    align-items: center;
+    padding: 8px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: 58px black;
+  }
+
+  .nav__link--btn:hover {
+transform: scale(105%);
+transition: 300ms ease;
+  }
+
+li:hover {
+transform: scale(124%);
+transition: 300ms ease;
+  }
+
+  .nav__link {
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 36px;
+    box-shadow: 40px rgb(6, 5, 5);
+    color: rgb(228, 168, 76);
+  }
+   .nav__link--btn {
+    width: 124px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 24px;
+    border-radius: 20px;
+    color: rgb(16, 16, 16);
+    cursor: pointer;
+    background-color: rgb(228, 168, 76);
+   }
+
+  .title__search--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+input {
+    width: 400px;
+    height: 56px;
+    border-radius: 25px;
+    padding-left: 64px;
+    font-size: 28px;
+    margin-bottom: 24px;
+   color:  rgb(228, 168, 76);
+  }
+
+  /*
+  MOVIES
+  */
+
+  #filter {
+    margin: 24px;
+    width: 160px;
+    height: 32px;
+    background-color: black;
+    color: rgb(228, 168, 76);
+    font-size: 18px;
+  }
