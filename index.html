@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/9ada813903.js"
       crossorigin="anonymous"
@@ -16,7 +15,7 @@
         <div class="nav__container">
           <ul class="nav__links">
             <li><a class="nav__link" href="#">HOME</a></li>
-            <li><a class="nav__link" href="#">FIND YOUR MOVIE</a></li>
+            <li><a class="nav__link" href="#">FIND A MOVIE</a></li>
             <button class="nav__link--btn">CONTACT</button>
            
           </ul>
@@ -33,13 +32,17 @@
 
     <div class="container">
         <div class="row">
-    <select id="filter" onchange="filterMovies()">
-        <option value="" disabled selected>Sort</option>
-        <option value="LOW_TO_HIGH">Date</option>
-        <option value="HIGH_TO_LOW">Price, High to Low</option>
-        <option value="RATING">Rating</option>
+            <div class="results__filter">
+            <div class="results__wrapper">
+                <Span class="results">Search Results For...</Span>
+                <span class="search__name"></span>
+            </div>
+    <select id="filter" onchange="filterMovies(event)">
+        <option value="" disabled selected>Sort By Year</option>
+        <option value="newest">Newest To Oldest</option>
+        <option value="oldest">Oldest To Newest</option>
       </select>
-    
+    </div>
       <div class="movies__loading">
       <i class="fas fa-spinner movies__loading--spinner"></i>
      </div>
@@ -49,10 +52,10 @@
 
 </div>
     </section>
-    
+
           </div>      
            </div>      
    
-
+           <script src="index.js"></script>
 </body>
 </html>
